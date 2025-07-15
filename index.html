@@ -122,7 +122,7 @@ ORDER BY Assessment_Access;
       navigator.clipboard.writeText(sqlTemplate).then(() => {
         noticeDiv.textContent = "This query has already been copied to your clipboard. Please open MySQL WorkBench - Dory Database and paste the query.";
       }).catch(err => {
-        noticeDiv.textContent = "Failed to copy the query to clipboard.";
+        noticeDiv.textContent = "Please copy this query and paste into MySQL Workbench using the Dory Database";
         noticeDiv.style.color = "red";
         console.error("Clipboard error:", err);
       });
